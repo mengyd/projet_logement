@@ -267,7 +267,6 @@ void chercheBudget(liste ltTotal){
     }
 
     for(i=0; i<longeur; i++){
-        //printf("\n%d", tab[i]);
         printf("\n----------------\n");
         afficheParId(tab[i], ltTotal);
     }
@@ -304,7 +303,6 @@ void sauvegarder(liste ltTotal){
     scanf("%s", emplacement);
 
     fichier = fopen(emplacement, "w");
-    //fichier = fopen("C:\\ESGI_test\\test_projet.txt","w");
 
     if(fichier == NULL){
         exit(EXIT_FAILURE);
