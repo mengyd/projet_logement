@@ -14,7 +14,8 @@ int main(int argc, char *argv[])
 
     do{
         printf("\n++++++++++++++++++++++++\n");
-        printf("\nChoisir votre opération :\n0.Quitter;\n1.Ajout;\n2.Cherche par type;\n3.Cherche par nombre de pièces;\n4.Cherche par surface;"
+        printf("\nChoisir votre opération :\n0.Quitter;"
+               "\n1.Ajout;\n2.Cherche par type;\n3.Cherche par nombre de pièces;\n4.Cherche par surface;"
                "\n5.Cherche par nombre de pièces et loyer;\n6.Cherche par budget\n7.Sauvegarder\n8.Afficher la liste\n");
         scanf("%d", &op);
 
