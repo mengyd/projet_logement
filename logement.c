@@ -3,7 +3,7 @@
 #include <string.h>
 #include "logement.h"
 
-// ICI modifications athif
+// Fonction pour afficher les annonces
 void afficheAnnonce(liste a){
     printf("\n-----------------\n");
     printf("\nidAnnonce : %d", a->idAnnonce);
@@ -65,7 +65,7 @@ int countListe(liste ltTotal){
     return cpt;
 }
 
-
+// Fonction ajout d'une annonce
 liste ajoutAnnonce(liste ltTotal){
     liste lt2;
     Annonce *a = NULL;
@@ -110,7 +110,7 @@ void afficheListe(liste ltTotal){
     }
 }
 
-
+// Fonction de recherche
 void chercheType(liste ltTotal){
     liste lt2=NULL;
     int typ,cpt=0;
