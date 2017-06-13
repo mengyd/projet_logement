@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h> //Jojo
 #include <stdlib.h>
 #include <string.h>
 #include "logement.h"
@@ -12,7 +12,7 @@ void afficheAnnonce(liste a){
     }else if(a->type == Maison){
         printf("\nType : Maison");
     }
-    printf("\nnbPièces : %d\nSurface : %.2f\nLoyer : %.2f\nCharge : %.2f", a->nbPieces, a->surface, a->loyer, a->charge);
+    printf("\nnbPiÃ¨ces : %d\nSurface : %.2f\nLoyer : %.2f\nCharge : %.2f", a->nbPieces, a->surface, a->loyer, a->charge);
     printf("\n=================\n");
 }
 
@@ -34,7 +34,7 @@ liste saisie(liste lt){
         a->type = Maison;
     }
 
-    printf("\nSaisir nombre de pièces : ");
+    printf("\nSaisir nombre de piÃ¨ces : ");
     scanf("%d", &a->nbPieces);
 
     printf("\nSaisir surface : ");
@@ -140,7 +140,7 @@ void chercheNbPieces(liste ltTotal){
     lt2 = ltTotal;
 
     do{
-        printf("\nSaisir nombre de pièces(plus grand que 0): ");
+        printf("\nSaisir nombre de piÃ¨ces(plus grand que 0): ");
         scanf("%d", &nbPiece);
     }while(nbPiece<1);
 
@@ -186,7 +186,7 @@ void chercheNbLoyer(liste ltTotal){
     lt2 = ltTotal;
 
     do{
-        printf("\nSaisir nombre de pièces(plus grand que 0): ");
+        printf("\nSaisir nombre de piÃ¨ces(plus grand que 0): ");
         scanf("%d", &nbPiece);
     }while(nbPiece<1);
 
