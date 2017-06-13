@@ -205,7 +205,7 @@ void chercheNbLoyer(liste ltTotal){
     printf("\nNombre d'annonces : %d", cpt);
 }
 
-
+// Fonction de recherche par prix
 float cherchePrix(int id, liste ltTotal){
     liste lt2=NULL;
     float prix;
@@ -290,7 +290,7 @@ void chercheBudget(liste ltTotal){
     free(tab);
 }
 
-
+// Fonction de sauvegarde des informations dans un fichier texte 
 void sauvegarder(liste ltTotal){
     FILE *fichier;
     char type[15];
