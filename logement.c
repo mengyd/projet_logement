@@ -110,7 +110,7 @@ void afficheListe(liste ltTotal){
     }
 }
 
-
+//chercher par type de logement saisie
 void chercheType(liste ltTotal){
     liste lt2=NULL;
     int typ,cpt=0;
