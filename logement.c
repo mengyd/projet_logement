@@ -3,7 +3,7 @@
 #include <string.h>
 #include "logement.h"
 
-
+// Fonction pour afficher les annonces
 void afficheAnnonce(liste a){
     printf("\n-----------------\n");
     printf("\nidAnnonce : %d", a->idAnnonce);
@@ -12,7 +12,7 @@ void afficheAnnonce(liste a){
     }else if(a->type == Maison){
         printf("\nType : Maison");
     }
-    printf("\nnbPièces : %d\nSurface : %.2f\nLoyer : %.2f\nCharge : %.2f", a->nbPieces, a->surface, a->loyer, a->charge);
+    printf("\nnbPiÃ¨ces : %d\nSurface : %.2f\nLoyer : %.2f\nCharge : %.2f", a->nbPieces, a->surface, a->loyer, a->charge);
     printf("\n=================\n");
 }
 
@@ -34,7 +34,7 @@ liste saisie(liste lt){
         a->type = Maison;
     }
 
-    printf("\nSaisir nombre de pièces : ");
+    printf("\nSaisir nombre de piÃ¨ces : ");
     scanf("%d", &a->nbPieces);
 
     printf("\nSaisir surface : ");
@@ -65,7 +65,7 @@ int countListe(liste ltTotal){
     return cpt;
 }
 
-
+// Fonction ajout d'une annonce
 liste ajoutAnnonce(liste ltTotal){
     liste lt2;
     Annonce *a = NULL;
@@ -110,7 +110,7 @@ void afficheListe(liste ltTotal){
     }
 }
 
-
+// Fonction de recherche
 void chercheType(liste ltTotal){
     liste lt2=NULL;
     int typ,cpt=0;
@@ -140,7 +140,7 @@ void chercheNbPieces(liste ltTotal){
     lt2 = ltTotal;
 
     do{
-        printf("\nSaisir nombre de pièces(plus grand que 0): ");
+        printf("\nSaisir nombre de piÃ¨ces(plus grand que 0): ");
         scanf("%d", &nbPiece);
     }while(nbPiece<1);
 
@@ -186,7 +186,7 @@ void chercheNbLoyer(liste ltTotal){
     lt2 = ltTotal;
 
     do{
-        printf("\nSaisir nombre de pièces(plus grand que 0): ");
+        printf("\nSaisir nombre de piÃ¨ces(plus grand que 0): ");
         scanf("%d", &nbPiece);
     }while(nbPiece<1);
 
@@ -205,7 +205,7 @@ void chercheNbLoyer(liste ltTotal){
     printf("\nNombre d'annonces : %d", cpt);
 }
 
-
+// Fonction de recherche par prix
 float cherchePrix(int id, liste ltTotal){
     liste lt2=NULL;
     float prix;
@@ -290,7 +290,7 @@ void chercheBudget(liste ltTotal){
     free(tab);
 }
 
-
+// Fonction de sauvegarde des informations dans un fichier texte 
 void sauvegarder(liste ltTotal){
     FILE *fichier;
     char type[15];
