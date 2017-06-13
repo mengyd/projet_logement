@@ -1,6 +1,7 @@
 #ifndef LOGEMENT_H_INCLUDED
 #define LOGEMENT_H_INCLUDED
 
+//utilisateurs ne peut choisir que les deux type de logement au dessous
 typedef enum Type{
     Appartement = 1,
     Maison = 2
